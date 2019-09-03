@@ -1,0 +1,528 @@
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+.ar{
+    font-family: 'Markazi Text', serif;
+    
+    direction:rtl;
+} /*for arabic*/
+.en{
+    font-family: 'PT Sans', sans-serif;
+}
+                /*=== === === === === === === === === === startFrameWork === === === === === === === === === === ==*/
+.thumbnail{
+    background-color:#FFF;
+    border:3px dashed var(--body-color);
+    padding: 3px;
+}
+.over-lay{
+    /*start for parent of over-lay*/
+    
+/*
+    position: relative;
+    height: 500px;
+*/
+    /*end for parent of over-lay*/
+    
+    background-color: #14171aa0;
+    
+    position:absolute;
+    top:0;
+    left:0;
+    
+    width:100%;
+    height:100%;
+}
+.link{
+    color: var(--h2-color);
+    
+}
+.box-decoration{
+    box-shadow: 0px 0px 150px 20px var(--h2-color);
+    
+}
+.flex-box{
+    
+    display: flex;
+}
+.full-width{
+    
+    flex-basis: 100%;
+}
+.wrap{
+    
+    flex-wrap: wrap;
+}
+.no-wrap{
+    
+    flex-wrap: nowrap;
+}
+.circle{
+    
+    border-radius:50%;
+}
+.border{
+    border-style: solid;
+    
+    border-width: 1px;
+    
+}
+.capital{
+    text-transform: capitalize;
+    
+}
+.uppercase{
+    text-transform: uppercase;
+    
+}
+.lowercase{
+    text-transform: lowercase;
+    
+}
+
+                /*=== === === === === Start ProgressBar === === === === === */
+[class^="progress-"]{
+    border: 1px solid var(--body-color);
+    
+    height: 40px;
+    padding:1px;
+}
+[class^="progress-"] .prog-bar{
+    background-color: var(--body-color);
+    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+[class^="progress-"] .prog-bar .percentage{
+    color:var(--grand-color);
+    
+    text-align: start;
+    font-size: calc(var(--p-font)*.7);
+}
+                /*=== === === === === End ProgressBar === === === === === ==*/
+
+                /*=== === === === === === === === === === endFrameWork === === === === === === === === === === === */
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startRules === === === === === === === === === === === ==*/
+
+:root{
+    --h2-color:#63ba46;             /*yellowed Green*/      /*main-logo & maps*/         /*h6 ==> signature*/
+    --h3-color:#333;                /*dark gray*/           /*h3 ==> side label*/   /*h4 ==> paragragh label*/
+    --p-color:#666;                 /*middle gray*/         /*p ==> paragragh*/
+    --nav-logo-color:#a8a8a8;       /*light gray*/
+    --social-logo-color:#f4ad24;    /*grayed yellow*/
+    --grand-color-light:#f2f2f2;                            /*light back ground*/
+    --grand-color-dark:#1c212a;                             /*light back ground*/
+    --footer-color:#232a34;                                 /*footer*/
+    --body-color:#fff;
+    
+    /*--body-color:#666;*/
+    /*--h2-color:#1da1f2; */   /*h2 ==> center label*/
+    /*--h5-color:#000000;*/
+    
+    --h1-font:100px;
+    --h2-font:70px;     /*center label*/
+    --h3-font:35px;     /*side label*/
+    --h4-font:40px;     /*paragragh label*/
+    --h5-font:30px;
+    --h6-font:40px;     /*signature*/
+    --p-font:30px;      /*paragragh*/
+    
+    --xxs:calc(320px/12);
+    --xs:calc(480px/12);
+    --s:calc(768px/12);
+    --m:calc(992px/12);
+    --l:calc(1200px/12);
+}
+*{
+    
+    margin:0;
+    padding:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+}
+::selection{
+    color:#F00;
+    background-color:#888;
+    
+}
+body{
+}
+body > *{
+    
+    margin-bottom: 20px;
+}
+body > * .container{
+    
+    margin: auto;
+}
+/*
+header.mini{
+}
+*/
+section.mini{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+article{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+h1,h2,h3,h4,h5,h6,p,label{
+    
+    padding: 10px;
+}
+h1,h2,h3,h4,h5,   p,label{
+    
+    flex-basis: 100%;
+}
+h1,h2                    {
+    
+    display: flex;
+    
+}
+         h4,h5,h6,  label{
+    
+    display: flex;
+    justify-content: center;
+    
+    text-align: center;
+}
+h1,h2,h3,h4,h5,h6,  label,span,ul{
+    text-transform: capitalize;
+}
+h1{
+    color: var(--h2-color);
+    
+    margin: 0;
+    padding: 0;
+    
+    font-size: var(--h1-font);
+}
+/*
+h2{
+    color: var(--h2-color);
+    
+    font-size: var(--h2-font);
+}
+*/
+h3{
+    color: var(--h3-color);
+    
+    font-size: var(--h3-font);
+}
+h4{
+    color: var(--h3-color);
+    
+    font-size: var(--h4-font);
+}
+/*
+h5{
+    color: var(--h3-color);
+    
+    font-size: var(--h5-font);
+}
+*/
+h6{
+    color: var(--h2-color);
+    
+    flex-basis: 80%;
+    display: inline;
+    
+    font-size: var(--h6-font);
+}
+.ar h6{
+    font-family: 'Tajawal', sans-serif;
+    font-style: oblique;
+    
+} /*for arabic*/
+.en h6{
+    font-family: 'Dancing Script', cursive;
+    font-style: oblique;
+    letter-spacing: 3px;
+    
+}
+p{
+    color: var(--p-color);
+    
+    text-align: justify;
+    font-size: var(--p-font);
+}
+img{
+    font-size: var(--p-font);
+}
+
+                /*=== === === === === === === === === === endRules === === === === === === === === === === === === */
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startHeader === === === === === === === === === === === =*/
+
+body header.grand{
+    background-image: url("https://followmykidapp.com/website/wp-content/uploads/2016/07/Website-Cover-Page-3.jpg");
+    background-size: cover;
+    
+    position: relative; /*For Lay-Out*/
+    
+    height: 700px;      /*For Lay-Out*/
+}
+body header.grand nav.mini{
+    display: none;
+    background-color:red;
+    
+    flex-basis: 100%;
+    
+    text-align: center;
+    font-size: var(--h4-font);
+}
+body header.grand .container .parent{
+    
+    flex-basis: 30%;
+    justify-content: space-evenly;
+}
+body header.grand .container .parent .sub-container section.mini article:nth-of-type(2){
+    
+    flex-basis: 30%;
+    justify-content: space-evenly;
+}
+                /*=== === === === === === === === === === endHeader === === === === === === === === === === === ===*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startNav === === === === === === === === === === === ====*/
+
+body nav.grand{
+    
+    width:98%;
+    margin: auto;
+    margin-bottom: 20px; /* Because of ( margin: auto; ) at Line 315*/
+    border-radius: 50px;
+    
+}
+body nav.grand .container .parent .sub-container header.mini{
+    
+    flex-basis:10%;
+}
+body nav.grand .container .parent .sub-container section.mini{
+    
+    flex-basis:90%;
+}
+
+body nav.grand .container .parent .sub-container section.mini article ul{
+    
+    list-style: none;
+}
+body nav.grand .container .parent .sub-container section.mini article ul li{
+/*    flex-basis:15%;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    
+    text-align: center;
+    font-size: 20px;
+}
+
+                /*=== === === === === === === === === === endNav === === === === === === === === === === === === ==*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startVision === === === === === === === === === === === ===*/
+
+
+
+                /*=== === === === === === === === === === endVision === === === === === === === === === === === === =*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startHow-it-works === === === === === === === === === === === ===*/
+
+
+body .how-it-works .container .parent .sub-container section.mini{
+}
+body .how-it-works .container .parent .sub-container section.mini article{
+    
+    flex-basis: 50%;
+}
+body .how-it-works .container .parent .sub-container section.mini article{
+}
+
+                /*=== === === === === === === === === === endHow-it-works === === === === === === === === === === === === =*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startParent-app === === === === === === === === === === === ===*/
+
+
+body .parent-app .container .parent .sub-container section.mini article{
+    
+    flex-basis: 50%;
+}
+body .parent-app .container .parent .sub-container section.mini article:nth-of-type(2) article{
+    
+    flex-basis: 100%;
+}
+
+                /*=== === === === === === === === === === endParent-app === === === === === === === === === === === === =*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startDriver-app === === === === === === === === === === === ===*/
+
+body .driver-app .container .parent .sub-container section.mini article{
+    
+    flex-basis: 50%;
+}
+
+                /*=== === === === === === === === === === endDriver-app === === === === === === === === === === === === =*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startSchool-admin === === === === === === === === === === === ===*/
+
+body .school-admin .container .parent .sub-container section.mini article{
+    
+    flex-basis: 50%;
+}
+
+                /*=== === === === === === === === === === endSchool-admin === === === === === === === === === === === === =*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startTestimonials === === === === === === === === === === === ===*/
+
+body .testimonials .container .parent .sub-container section.mini article p{
+    flex-basis: 80%;
+}
+body .testimonials .container .parent .sub-container footer.mini article h6{
+    justify-content: flex-end;
+}
+
+                /*=== === === === === === === === === === endtesTimonials === === === === === === === === === === === === =*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startContact === === === === === === === === === === === ===*/
+
+body .contact .container .parent .sub-container section.mini article{
+    
+    flex-basis: 50%;
+}
+
+                /*=== === === === === === === === === === endContact === === === === === === === === === === === === =*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startMedia === === === === === === === === === === === ==*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === --XXS Portrait phones and smaller === === === === === === === === ===*/
+
+@media (max-width: 479px){
+    body > * > .container{
+        flex-basis: calc(var(--xxs)*11.5);
+    }
+}
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === --XS Landscape phones and portrait tablets === === === === === === ==*/
+
+@media (min-width: 480px) and (max-width: 767px){
+    article{
+        flex-basis: 80%;
+    }
+    body > * > .container{
+        width: calc(var(--xs)*11.5);
+    }
+    body nav.grand .container .parent .sub-container{
+        flex-wrap: wrap;
+    }
+    body nav.grand .container .parent .sub-container header h3{
+        justify-content: center;
+    }
+    body nav.grand .container .parent .sub-container section ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === --S Portrait tablets and small desktops === === === === === === === =*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    article{
+        flex-basis: 50%;
+    }
+    body > * > .container{
+        width: calc(var(--s)*11.5);
+    }
+}
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === --M Landscape tablets and medium desktops === === === === === === == */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    body > * > .container{
+        width: calc(var(--m)*11.5);
+    }
+}
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === --L Large desktops and laptops === === === === === === === === === ==*/
+
+@media (min-width: 1200px) {
+    body > * > .container{
+        width: calc(var(--l)*11.5);
+    }
+}
+
+                /*=== === === === === === === === === === endMedia === === === === === === === === === === === === */
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
