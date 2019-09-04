@@ -281,7 +281,7 @@ body header.grand{
     height: 700px;      /*For Lay-Out*/
 }
 body header.grand nav.mini{
-    display: none;
+/*    display: none;*/
     background-color:red;
     
     flex-basis: 100%;
