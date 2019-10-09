@@ -1,0 +1,86 @@
+/*How to use*/
+/*
+<div class="input-area">                <!-- the container -->
+    <p class="label">                   <!-- the Main Label -->
+        label:
+        <button class="add-button">+</button>
+    </p>
+    <div class="field(#fields)">        <!-- the Input Field -->
+        <p class="label">label:</p>
+        <input class="input" type="" placeholder="" value="">
+    </div>
+</div>
+*/
+
+/*=== === === === === startInputField === === === === === */
+
+.input-area{
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* border:1px solid #000; */
+    margin:10px;
+}
+input,p{
+    display: flex;
+}
+.input-area > p{
+    flex-basis: 100%;
+    padding: 10px;
+    font-size: calc(var(--text-font)*2);
+}
+.input-area [class^="field"]{
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    font-size: var(--text-font);
+}
+.input-area [class^="field"] p.label{
+    padding-right: 10px;
+}
+.input-area [class^="field"] input.input{
+    border: none;
+    background-color:transparent;
+    padding: 2px;
+    border-bottom: 2px solid var(--border-color);
+    
+    margin-bottom: 7px;
+
+}
+
+
+.input-area .field1{
+    flex-basis: 100%;
+    margin-left:3%;
+    margin-right:3%;
+}
+.input-area .field1 p.label{
+    flex-basis:30%;
+}
+.input-area .field1 input.input{
+    flex-basis:65%;
+}
+
+.input-area .field2{
+    flex-basis: 48%;
+    margin-left:1%;
+    margin-right:1%;
+}
+.input-area .field3{
+    flex-basis: 32%;
+    margin-left:.6%;
+    margin-right:.6%;
+}
+.input-area .field2 p.label,
+.input-area .field3 p.label{
+    flex-basis:20%;
+}
+.input-area .field2 input.input,
+.input-area .field3 input.input{
+    flex-basis: 75%;
+}
+/*=== === === === === endInputField === === === === === */

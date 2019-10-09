@@ -1,0 +1,53 @@
+
+/* Position */
+.relative{
+    position: relative;
+}
+/* Position */
+
+/* Display */
+
+.display-f{
+    display: flex;
+}
+
+.hidden{
+    visibility: hidden!important;
+
+}
+.display-non{ 
+    display: none!important;
+}
+/* Display */
+
+/* Flex */
+
+.f-basis100{
+    flex-basis: 100%;
+}
+.f-basis50{
+    flex-basis: 50%;
+}
+.f-basis30{
+    flex-basis: 30%;
+}
+.f-basis25{
+    flex-basis: 25%;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.no-wrap{
+    flex-wrap: nowrap;
+}
+.h-center{
+    justify-content: center;
+}
+.v-center{
+    align-items: center;
+}
+/* Flex */
+
+.auto{
+    margin:auto;
+}

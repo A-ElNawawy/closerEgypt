@@ -1,0 +1,16 @@
+
+.arw{
+    color: var(--p-color);
+    background-color: var(--body-color);
+    box-shadow: 0 0 2px 0 var(--p-color);
+
+    border: none;
+    border-radius: 40px;
+    padding: 15px 20px;
+
+    font-weight: bold;
+}
+.arw:hover{
+    color: var(--body-color);
+    background-color: var(--h2-color);
+}

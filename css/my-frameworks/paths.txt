@@ -1,0 +1,11 @@
+E:\Web\Tools\fonts
+E:\Web\Tools\images
+E:\Web\Tools\css\myFramWorks
+E:\Web\Tools\css\name
+
+E:\projects-source\name\fonts
+E:\projects-source\name\images
+E:\projects-source\name\pages
+E:\projects-source\name\css\my-frameworks(framework-___.css,normalize.css,path.txt,readme.md)
+E:\projects-source\name\css\name(rules.css,variables.css,media.css)
+E:\projects-source\name\index.html

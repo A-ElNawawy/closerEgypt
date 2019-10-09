@@ -1,0 +1,202 @@
+/* Margin*/
+
+.margin5{
+    margin:5px;
+}
+.margin10{
+    margin:5px;
+}
+.margin15{
+    margin:5px;
+}
+.margin20{
+    margin:5px;
+}
+.margin-btm5{
+    margin-bottom: 5px;
+}
+.margin-btm10{
+    margin-bottom: 10px;
+}
+.margin-btm15{
+    margin-bottom: 15px;
+}
+.margin-btm20{
+    margin-bottom: 20px;
+}
+
+/* Margin*/
+
+/* Padding */
+
+.padding5{
+    padding:5px;
+}
+.padding10{
+    padding:10px;
+}
+.padding15{
+    padding:15px;
+}
+.padding20{
+    padding:20px;
+}
+
+/* Padding */
+/* Resets*/
+
+.reset-a{
+    text-decoration: none;
+}
+.reset-ul{
+    list-style: none;
+}
+.reset-button{
+    background: none;
+    border: none;
+}
+/* Resets*/
+
+/* Borders */
+/* How To Use */
+/*
+<style>
+.border{
+    --b-color: var(--border-color)!important;
+    --b-radius: 6px!important;
+    --b-thickness: 1px!important;
+}
+</style>
+*/
+
+.border{
+    border: var(--b-thickness) solid var(--b-color);
+    border-radius: var(--b-radius);
+}
+
+/* Borders */
+
+/* Circle*/
+
+.circle{
+    border-radius:50%;
+}
+
+/* Circle*/
+
+/* Shadow*/
+
+.shadow-decoration{
+    box-shadow: 0px 0px 150px 20px var(--h2-color);
+    
+}
+/*
+<style>
+.shadow-border{
+    --b-color: var(--border-color)!important;
+}
+</style>
+*/
+.shadow-border{
+    box-shadow: 0 0 5px 2px var(--b-color);
+}
+/*
+<style>
+.shadow-border-in{
+    --b-color: var(--border-color)!important;
+}
+</style>
+*/
+.shadow-border-in{
+    box-shadow: 0 0 3px 1px var(--b-color) inset;
+}
+/* Shadow*/
+
+/*water mark*/
+
+/* How To Use */
+/*
+
+<h3 class="wtr-mrk"></h3>
+<style>
+.wtr-mark{
+    --text-color: #fff!important;
+    --top: -100px!important;
+    --text-font: 150px!important;
+}
+</style>
+*/
+.wtr-mrk{
+    /* Variables*/
+    --text-color: #e6dada;
+    --top:-100px;
+    --text-font: 150px;
+    /* Variables*/
+
+    color: var(--text-color);
+
+    position: absolute;
+    z-index: -1;
+    top:var(--top);
+
+    font-size: var(--text-font);
+}
+/*water mark*/
+
+/* Over lay */
+
+/* How To Use */
+/*
+
+<div class="over-lay-container">
+    <div class="over-lay">
+
+    </div>
+</div>
+
+<style>
+.over-lay-container{
+    --height: 500px!important;
+    --over-lay-color: #fff!important;
+}
+</style>
+*/
+.over-lay-container{
+    position: relative;
+    height: var(--height);
+}
+.over-lay{
+
+    background-color: var(--over-lay-color);
+    
+    position:absolute;
+    top:0;
+    left:0;
+    
+    width:100%;
+    height:100%;
+}
+/* Over lay */
+
+/* Thumbnail */
+/* How To Use */
+
+/*
+<style>
+.thumbnail{
+    --background-color: #fff!important;
+    --border-color: #000!important;
+}
+</style>
+*/
+.thumbnail{
+    /* Variables*/
+    --background-color: #fff;
+    --border-color: #000;
+    /* Variables*/
+
+    background-color:var(--background-color);
+    border:3px dashed var(--border-color);
+    padding: 3px;
+}
+/* Thumbnail */

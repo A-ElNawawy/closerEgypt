@@ -1,0 +1,44 @@
+/* How To use */
+/*
+
+<div class="progress-">
+    <div class="prog-bar">
+        <p class="percentage">90%</p>
+    </div>
+</div>
+
+*/
+/*=== === === === === Start ProgressBar === === === === === */
+[class^="progress-"]{
+    --text-color: #fff;
+    --border-color: #000;
+    
+    --text-font: 30px;
+
+    background-color: var(--text-color);
+    border: 1px solid var(--border-color);
+
+    height: 30px;
+    width: 80%;
+
+    margin: 10px;
+    padding: 2px;
+}
+[class^="progress-"] .prog-bar{
+    background-color: var(--border-color);
+    
+    height: 100%;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content:flex-end;
+    align-items: center;
+
+    /* put the following in style.css */ /* According to the percentage you need*/
+    width:60%;
+}
+[class^="progress-"] .prog-bar .percentage{
+    color: var(--text-color);
+    font-size: calc(var(--text-font)*1);
+}
+/*=== === === === === End ProgressBar === === === === === ==*/

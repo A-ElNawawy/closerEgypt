@@ -1,0 +1,58 @@
+/*
+
+<div class="mobile">
+    <div class="screen">
+        <img src="" alt="">
+    </div>
+    <div class="circle"></div>
+</div>
+
+*/
+
+.mobile{
+    width: 280px;
+    height: 530px;
+    border-radius: 50px;
+
+    background: #ffffff;
+    background: -moz-radial-gradient(center, ellipse cover,  #ffffff 70%, #f1f2ed 79%, #f1f2ed 79%);
+    background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 70%,#f1f2ed 79%,#f1f2ed 79%);
+    background: radial-gradient(ellipse at center,  #ffffff 70%,#f1f2ed 79%,#f1f2ed 79%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f1f2ed',GradientType=1 );
+    
+    box-shadow: 
+                0px -1px 1px 1px #e4e4e4 inset,
+                0px -2px 1px 1px #e4e4e4 inset,
+                0px -3px 1px 1px #e4e4e4 inset,
+                0px -4px 1px 1px #e4e4e4 inset,
+                0px -5px 1px 1px #e4e4e4 inset,
+                0px -6px 1px 1px #e4e4e4 inset,
+                0px 10px 7px 1px #f4f4f4;
+}
+
+.mobile .screen{
+    width:90%;
+    margin: 60px auto 13px;
+    height: 70%;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+}
+.mobile .screen img{
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 5px;
+}
+.mobile .circle{
+
+    background: #ffffff;
+    background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #fcfcfc 91%, #f5f5f5 100%);
+    background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#fcfcfc 91%,#f5f5f5 100%);
+    background: radial-gradient(ellipse at center,  #ffffff 0%,#fcfcfc 91%,#f5f5f5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f5f5',GradientType=1 );
+
+    width: 55px;
+    height: 55px;
+    margin: auto;
+    border: 1px solid #e2e2e2;
+}

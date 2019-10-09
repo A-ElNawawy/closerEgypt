@@ -1,0 +1,25 @@
+/* How To Use */
+/*
+
+<p class="">
+    <button class="add-button">+</button>
+</p>
+
+*/
+
+/* add button */
+.add-button{
+    --width:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:transparent;
+    border: 1px solid #000;
+    border-radius: calc(var(--width)/2);
+    width: var(--width);
+    height: var(--width);
+    margin: 0 5px;
+    font-size: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,86 @@
+/*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+/*=== === === === === === === === === === startRules === === === === === === === === === === ==*/
+
+/*==================================================================*/
+                            /* startImport*/
+@import url('media.css');
+@import url('style.css');
+@import url('variables.css');
+@import url('mobile.css');
+@import url('../../icons/meetApp/my-icons-collection1/font/flaticon.css');
+@import url('../my-frameworks/decoration.css');
+@import url('../my-frameworks/normalize.css');
+@import url('../my-frameworks/position.css');
+@import url('../my-frameworks/text.css');
+                            /* endImport*/
+/*==================================================================*/
+
+/*==================================================================*/
+                            /* startFonts */
+
+@font-face {
+
+    font-family: "proxima";
+    src:
+        url("../../fonts/meetApp/ProximaNovaSoftW03Regular/ProximaNovaSoftW03Regular.eot") format("embedded-opentype")
+        ;
+    src:
+        url("../../fonts/meetApp/ProximaNovaSoftW03Regular/ProximaNovaSoftW03Regular.woff2") format("woff2"),
+        url("../../fonts/meetApp/ProximaNovaSoftW03Regular/ProximaNovaSoftW03Regular.woff") format("woff"),
+        url("../../fonts/meetApp/ProximaNovaSoftW03Regular/ProximaNovaSoftW03Regular.ttf") format("truetype"),
+        url("../../fonts/meetApp/ProximaNovaSoftW03Regular/ProximaNovaSoftW03Regular.otf") format("opentype")
+        ; 
+}
+.ar{
+    font-family: 'Markazi Text', serif;
+    direction:rtl;
+} /*for arabic*/
+.en{
+    font-family: proxima, sans-serif;
+}
+
+                            /* endFonts */
+/*==================================================================*/
+
+*{
+    padding: 0;
+    margin:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+::selection{
+    color:var(--body-color);
+    background-color:var(--text-color);
+    
+}
+body{
+    background-color:var(--body-color);
+    color:var(--text-color);
+
+    width:100%;
+    min-height: 640px;
+}
+body > *:not(.not){
+    margin-bottom: 250px;
+}   
+.container{
+    margin:auto;
+}
+p{
+    font-size: var(--text-font);
+}
+.font-title{
+    color: var(--title-color);
+    font-size: var(--title-font);
+    margin-bottom: 10px;
+}
+.font-sub-title{
+    color: var(--title-color);
+    font-size: var(--sub-title-font);
+}
+header.mini{
+    margin-bottom: 35px;
+}
+/*=== === === === === === === === === === endRules === === === === === === === === === === === */
+/*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/

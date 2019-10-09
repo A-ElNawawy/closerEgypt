@@ -1,0 +1,30 @@
+/* can use it with any element (div, button, a, p ....) */
+
+/* How to use:*/
+/*
+<div class="button">start</div>
+*/
+
+.button{
+    /* Variables*/
+    --text-color: #fff;
+    --background-color: #000;
+    
+    --text-font: 20px;
+    /* Variables*/
+
+    /* Reset*/
+    border: none;
+    text-decoration: none;
+    /* Reset*/
+    
+    color: var(--text-color);
+    background-color: var(--background-color);
+
+    display: inline-block;
+    border-radius: 40px;
+    padding: 15px 25px;
+
+    font-weight: bold;
+    font-size: var(--text-font);
+}

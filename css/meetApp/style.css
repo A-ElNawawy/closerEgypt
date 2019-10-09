@@ -1,0 +1,520 @@
+                                            /*forTest*/
+                                                /* body{
+                                                    background-color: #888;
+                                                }
+                                                .grand{
+                                                    background-color: #003;
+                                                }
+                                                nav.mini{
+                                                    background-color:#009;
+                                                }
+                                                header.mini{
+                                                    background-color:#998200;
+                                                }
+                                                section.mini{
+                                                    background-color:#d400ff;
+                                                }
+                                                footer.mini{
+                                                    background-color:#0b5757;
+                                                }
+                                                article{
+                                                    background-color:#090;
+                                                }
+                                                h1,h2,h3,h4,h5,h6{
+                                                    background-color:#300;
+                                                }
+                                                p{
+                                                    background-color:#900;
+                                                }
+                                                img{
+                                                    background-color:#f87cc4;
+                                                } */
+                                            /*forTest*/
+                                            
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startNav === === === === === === === === === === === =*/                                            
+
+body nav.grand{
+
+    background: #ffaf00;
+    background: -moz-linear-gradient(left,  #ffaf00 0%, #ff6100 50%, #ffaf00 100%);
+    background: -webkit-linear-gradient(left,  #ffaf00 0%,#ff6100 50%,#ffaf00 100%);
+    background: linear-gradient(to right,  #ffaf00 0%,#ff6100 50%,#ffaf00 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf00', endColorstr='#ffaf00',GradientType=1 );
+
+    color:var(--body-color);
+    
+    
+    position: fixed;
+    width:100%;
+    top:0;
+    overflow: hidden;
+    z-index: 5;
+}
+body nav.grand .container nav.mini{
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+body nav.grand .container nav.mini article.lft a{
+    font-size: 40px;
+    color:var(--body-color);
+    margin-right:5px;
+}
+body nav.grand .container nav.mini article.ryt ul li:not(:last-of-type){
+    padding-right: 30px;
+}
+body nav.grand .container nav.mini article.ryt ul li a{
+    color:var(--body-color);
+    padding-bottom: 5px;
+}
+body nav.grand .container nav.mini article.ryt ul li a:hover{
+    border-bottom: 1px solid var(--body-color);
+}
+
+                /*=== === === === === === === === === === startNav === === === === === === === === === === === =*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+     
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startHeader === === === === === === === === === === === =*/
+
+body header.grand{
+
+    background: #ffaf00;
+    background: -moz-linear-gradient(left,  #ffaf00 0%, #ff6100 50%, #ffaf00 100%);
+    background: -webkit-linear-gradient(left,  #ffaf00 0%,#ff6100 50%,#ffaf00 100%);
+    background: linear-gradient(to right,  #ffaf00 0%,#ff6100 50%,#ffaf00 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf00', endColorstr='#ffaf00',GradientType=1 );
+    
+    color:var(--body-color);
+    padding-top: 50px;
+    /* padding-bottom: 50px; */
+    margin-top: 56px;
+}
+/*------------------------------------------------*/
+body header.grand .container section.mini{
+    height:450px;
+}
+body header.grand .container section.mini article.ryt > *{
+    width: 80%;
+
+}
+body header.grand .container section.mini article.ryt h3{
+    font-size: 65px;
+    /* line-height: 1.4; */
+}
+body header.grand .container section.mini article.ryt > p{
+    margin: 10px 0 20px;
+}
+body header.grand .container section.mini article.ryt a{
+    padding:10px;
+    flex-basis: 40%;
+    margin-top:-70px;
+}
+
+                /*=== === === === === === === === === === endHeader === === === === === === === === === === === ===*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startBox1 === === === === === === === === === === === ===*/
+
+body .box1{
+    position: relative;
+    height: 550px;
+
+}
+body .box1 .container .background{
+    position: absolute;
+    top: 0;
+    left: -280px;
+    width: 100%;
+    height: 300%;
+    background: url('../../icons/meetApp/my-icons-collection1/svg/003-heart.svg') fixed,
+                url('../../icons/meetApp/my-icons-collection1/svg/003-heart-orange.svg') fixed;
+    background-repeat: no-repeat no-repeat;
+    background-size: 27%, 27%;
+    background-position-x: 0%,43%;
+    background-position-y: 50%,-10%;
+    z-index: -1;
+    transform: translate(280px,140px) rotateZ(0deg);
+}
+body .box1 .container header.mini article p{
+    text-align: center;
+    /* font-weight: bold; */
+}
+
+/*---------------------------------------------------*/
+
+body .box1 .container section.mini{
+    justify-content: space-between;
+    position: relative;
+    height: 400px;
+    width:70%;
+    margin: 20px auto;
+}
+body .box1 .container section.mini article{
+    padding: 40px 10px 20px;
+    position: absolute;
+    width:33%;
+    height: 300px;
+    background-color: var(--body-color);
+}
+body .box1 .container section.mini article:nth-of-type(1){
+    top:0;
+    left:0;
+}
+body .box1 .container section.mini article:nth-of-type(2){
+    top:15%;
+    left:35%;
+}
+body .box1 .container section.mini article:nth-of-type(3){
+    top:33%;
+    left:70%;
+}
+body .box1 .container section.mini article.border{
+    --b-color: var(--border-color)!important;
+    --b-radius: 6px!important;
+    --b-thickness: 1px!important;
+}
+body .box1 .container section.mini article img{
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+}
+body .box1 .container section.mini article p{
+    /* text-align: justify; */
+}
+body .box1 .container section.mini article:nth-of-type(1) a{
+    color: var(--dark-orange-color);
+}
+body .box1 .container section.mini article:nth-of-type(2) a{
+    color: var(--green-color);
+}
+body .box1 .container section.mini article:nth-of-type(2) i{
+    background: #92dd27;
+    background: -moz-linear-gradient(top,  #92dd27 1%, #a8db5c 100%);
+    background: -webkit-linear-gradient(top,  #92dd27 1%,#a8db5c 100%);
+    background: linear-gradient(to bottom,  #92dd27 1%,#a8db5c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#92dd27', endColorstr='#a8db5c',GradientType=0 );
+    
+
+    font-size: 34px;
+    width: 70px;
+    height: 70px;
+    color: white;
+    border-radius: 24px;
+}
+body .box1 .container section.mini article:nth-of-type(3) a{
+    color: var(--dark-move-color);
+}
+body .box1 .container section.mini article:nth-of-type(3) i{
+    background: #d728ed;
+    background: -moz-linear-gradient(top,  #d728ed 1%, #df53f0 100%);
+    background: -webkit-linear-gradient(top,  #d728ed 1%,#df53f0 100%);
+    background: linear-gradient(to bottom,  #d728ed 1%,#df53f0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d728ed', endColorstr='#df53f0',GradientType=0 );
+    
+
+    font-size: 34px;
+    width: 70px;
+    height: 70px;
+    color: white;
+    border-radius: 24px;
+}
+
+                /*=== === === === === === === === === === endBox1 === === === === === === === === === === === === =*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startBox2 === === === === === === === === === === === ===*/
+
+body .box2 .container header.mini article p{
+    text-align: center;
+}
+body .box2 .container section.mini{
+    justify-content: space-evenly;
+    
+}
+body .box2 .container section.mini div.mobile{
+    width: 260px;
+    height: 480px;
+    border:1px solid #e4e4e4;
+
+}
+
+                /*=== === === === === === === === === === endBox2 === === === === === === === === === === === === =*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startBox3 === === === === === === === === === === === ===*/
+
+body .box3 .container header.mini article p{
+    text-align: center;
+}
+body .box3 .container section.mini{
+    justify-content: space-evenly;
+    width: 70%;
+    margin: auto;
+}
+body .box3 .container section.mini button{
+    margin-top: 44px;
+}
+body .box3 .container section.mini button i{
+    color: var(--border-color);
+    font-size: 30px;
+}
+body .box3 .container section.mini button#active i{
+    color: var(--dark-orange-color);
+}
+body .box3 .container section.mini article{
+    flex-basis: 450px;
+    /* min-height: 200px; */
+    padding-bottom: 30px;
+    margin-top: 50px;
+}
+body .box3 .container section.mini article.shadow-border{
+    --b-color: var(--border-color)!important;
+    --b-radius: 6px!important;
+}
+body .box3 .container section.mini article .card{
+    width: 100%;
+    height: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+body .box3 .container section.mini article .card img{
+    position: absolute;
+    left: 205px;
+    top:-20px;
+    width: 40px;
+    height: 40px;
+    transform: rotateZ(-10deg);
+}
+body .box3 .container section.mini article h4{
+    color: var(--title-color);
+    font-size: var(--text-font);
+    margin-top: 5px;
+
+}
+body .box3 .container section.mini article i{
+    margin-top: 5px;
+    font-size: 12px;
+    color: var(--light-orange-color);
+}
+body .box3 .container section.mini article p{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+                /*=== === === === === === === === === === endBox3 === === === === === === === === === === === === =*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startBox4 === === === === === === === === === === === ===*/
+
+body .box4 .container section.mini{
+    background: #ffaf00;
+    background: -moz-linear-gradient(left,  #ffaf00 0%, #ff6100 100%);
+    background: -webkit-linear-gradient(left,  #ffaf00 0%,#ff6100 100%);
+    background: linear-gradient(to right,  #ffaf00 0%,#ff6100 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf00', endColorstr='#ff6100',GradientType=1 );
+
+    border-radius: 10px;
+    color: var(--body-color);
+    padding: 100px 100px;
+}
+body .box4 .container section.mini article{
+    flex-basis: 70%;
+}
+body .box4 .container section.mini article h4{
+    font-size: 50px;
+    color: var(--body-color);
+}
+body .box4 .container section.mini article > p{
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+body .box4 .container section.mini article a{
+    padding: 0 10px;
+    margin-bottom: -80px;
+    flex-basis: 40%;
+}
+
+                /*=== === === === === === === === === === endBox4 === === === === === === === === === === === === =*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startFooter === === === === === === === === === === === =*/
+
+body footer.grand .container section.mini{
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}                
+body footer.grand .container section.mini article > article i{
+    font-size: 40px;
+    color:var(--dark-orange-color);
+    margin-right:5px;
+}
+body footer.grand .container section.mini article h4{
+    margin-bottom: 21px;
+}
+body footer.grand .container section.mini article p address{
+    text-align: center;
+}
+sup {
+    top: 0!important;
+}
+body footer.grand .container section.mini article:last-of-type{
+}
+body footer.grand .container section.mini article.social a{
+    font-size: 15px;
+    color: var(--text-color);
+    justify-content: space-around;
+    width: 40px;
+    height: 40px;
+}
+body footer.grand .container section.mini article a:hover{
+    color: #fff;
+    background-color: var(--dark-orange-color);
+
+    border-radius: 50%;
+
+}
+
+/*----------------------------------------------------------*/
+
+body footer.grand .container footer.mini{
+    /* background-color: var(--dark-orange-color); */
+    margin-bottom: 15px;
+}
+body footer.grand .container footer.mini *{
+    color: var(--title-color);
+}
+body footer.grand .container footer.mini a{
+    color: var(--text-color);
+}
+body footer.grand .container footer.mini article.others-copy-right div *{
+    display: flex;
+    font-size: 10px;
+}
+body footer.grand .container footer.mini article.others-copy-right div *:not(:last-child){
+    margin-right: 5px;
+}
+body footer.grand .container footer.mini article.others-copy-right div a:not(:last-of-type)::after{
+    content: ',';
+}
+body footer.grand .container footer.mini article.others-copy-right div:not(:last-of-type)::after{
+    content: '|';
+    margin: 0 10px;
+}
+body footer.grand .container footer.mini article.my-copy-right{
+    /* font */
+}
+                /*=== === === === === === === === === === endFooter === === === === === === === === === === === ===*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === === === === startMedia === === === === === === === === === === === ==*/
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === --XXS Portrait phones and smaller === === === === === === === === ===*/
+
+@media (max-width: 479px){
+    body > * > .container{
+        flex-basis: calc(var(--xxs)*11.5);
+    }
+}
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === --XS Landscape phones and portrait tablets === === === === === === ==*/
+
+@media (min-width: 480px) and (max-width: 767px){
+    article{
+        flex-basis: 80%;
+    }
+    body > * > .container{
+        width: calc(var(--xs)*11.5);
+    }
+    body nav .container .parent .sub-container{
+        flex-wrap: wrap;
+    }
+    body nav .container .parent .sub-container header h3{
+        justify-content: center;
+    }
+    body nav .container .parent .sub-container section ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    body .box4 .container .parent .sub-container section.mini article{
+        flex-basis: 60%;
+    }
+}
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === --S Portrait tablets and small desktops === === === === === === === =*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    article{
+        flex-basis: 50%;
+    }
+    body > * > .container{
+        width: calc(var(--s)*11.5);
+    }
+    body .box4 .container .parent .sub-container section.mini article{
+        flex-basis: 35%;
+    }
+}
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === --M Landscape tablets and medium desktops === === === === === === == */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    body > * > .container{
+        width: calc(var(--m)*11.5);
+    }
+}
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/
+
+                /*=== === === === === === === --L Large desktops and laptops === === === === === === === === === ==*/
+
+@media (min-width: 1200px) {
+    body > * > .container{
+        width: calc(var(--l)*11.5);
+    }
+}
+
+                /*=== === === === === === === === === === endMedia === === === === === === === === === === === === */
+
+                /*--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -*/

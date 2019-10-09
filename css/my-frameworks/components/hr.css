@@ -1,0 +1,26 @@
+/* can use it with any element (div, button, a, p ....) */
+
+/* How to use:*/
+/*
+
+<hr class="hr">
+
+*/
+
+.hr{
+    
+    /* Variables*/
+    --hr-color: #f00;
+    --hr-thickness: .5px;
+    /* Variables*/
+
+    /* Reset*/
+    border: none;
+    /* Reset*/
+
+    background-color: var(--hr-color);
+
+    height: var(--hr-thickness);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
